@@ -1,0 +1,25 @@
+<!--
+Documentação do Responsive File Manager
+http://www.responsivefilemanager.com/demo.php
+-->
+
+<input id="fieldID" type="text" value="" >
+<a href="filemanager/filemanager/dialog.php?type=0&field_id=fieldID" class="iframe-btn" type="button">Open File Manager</a>
+ 
+ <!-- Add jQuery library -->
+<script type="text/javascript" src="fancybox/lib/jquery-1.10.1.min.js"></script>
+
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+ <script type="text/javascript">
+$(function(){
+	$('.iframe-btn').fancybox({
+		  'width'	: 1024,
+		  'minHeight'	: 600,
+		  'type'	: 'iframe',
+		  'autoScale'   : true
+     });
+  });
+  </script>
